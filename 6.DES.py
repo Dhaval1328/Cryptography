@@ -13,7 +13,7 @@ def encrypt_ecb(data, key):
 
 def decrypt_ecb(ciphertext, key):
     cipher = DES.new(key, DES.MODE_ECB)
-    plaintext = unpad(cipher.decrypt(ciphertext), 8)
+    plaintext = unpad(cipher.decrypt(ciphertext),  8)
     return plaintext
 
 def encrypt_cbc(data, key, iv):
