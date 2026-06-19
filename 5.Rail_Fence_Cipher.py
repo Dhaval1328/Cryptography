@@ -9,7 +9,7 @@ def rail_fence_cipher(plaintext, rails):
     for letter in plaintext:
         fence[rail].append(letter)
         rail += direction
-        if rail == rails-1 or rail == 0:
+        if rail == rails-1 or rail ==  0:
             direction = -direction
     
     ciphertext = ""
