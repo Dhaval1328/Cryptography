@@ -5,7 +5,7 @@ def mod_inverse(a, m):
     for i in range(1, m):
         if (a * i) % m == 1:
             return i
-    return None  # If inverse doesn't exist
+    return None  # If inverse doesn't  exist
 
 # Function to encrypt using 2x2 Hill cipher
 def hill_cipher_2x2_encrypt(plaintext, key):
